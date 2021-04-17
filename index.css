@@ -49,8 +49,7 @@ header img{
     width: 100vw;
     height: 504px;
     margin-top: 60px;
-    background: -moz-linear-gradient(left, rgba(67,75,103,1) 0%, rgba(52,58,81,1) 33%, rgba(23,25,35,1) 58%, rgba(0,0,0,1) 100%);
-}
+    background: -webkit-linear-gradient(left, rgba(67,75,103,1) 0%, rgba(52,58,81,1) 35%, rgba(23,25,35,1) 57%, rgba(0,0,0,1) 100%);}
 .container_banner{
     display: flex;
     width: 100vw;
@@ -139,18 +138,21 @@ header img{
     background-position: center center, center center;
 }
 .retangulo_como_participar{
-    background-color: black;
     width: 100%;
     height: 100%;
-    clip-path: polygon(0 19%, 100% 0, 100% 85%, 0% 100%);
+    background-color: black;
+    clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 100%);
 }
 .container_como_participar{
     position: absolute;
-    top: 60;
     z-index: 98;
+    top: 0;
     display: flex;
+    height: 100%;
+    width: 100%;
 }
 .como_participar_texto{
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,6 +163,8 @@ header img{
     font-weight: 700;
     font-size: 40px;
     line-height: 46.88px;
+    text-align: center;
+    margin: 5px 0;
 }
 .como_participar_texto p{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -168,13 +172,12 @@ header img{
     font-size: 22px;
     line-height: 25.78px;
     text-align: center;
+    width: 522px;
+    height: 100%;
 }
 .container_como_participar img{
     width: auto;
-    height: auto;
-    max-width: 700px;
-    max-height: 300px;
-    top: 10;
+    height: 100%;
 }
 
 
