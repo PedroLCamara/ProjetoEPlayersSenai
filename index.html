@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/77a9a4e10d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,7 +16,10 @@
                 <a href="#">
                     <img class="logo" src="assets_/logo.svg" alt="Logo do E-Players, portal de campeonatos online">
                 </a>
-                <nav class="nav_header">
+                <a class="btn_menu" href="javascript:void(0)" onclick="botaoDoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <nav id="menu_header" class="nav_header">
                     <a href="#">Início</a>
                     <a href="#">Horários</a>
                     <a href="#">Campeonatos</a>
@@ -25,7 +29,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main onclick="botaoDoMenuFechar()">
         <section class="banner">
             <div class="container_banner">
                 <img src="assets_/Banner_img.png"
@@ -49,7 +53,6 @@
             </div>
         </section>
         <section class="como_participar">
-            <div class="retangulo_como_participar"></div>
             <div class="container_grid">
                 <div class="container_como_participar">
                     <div class="como_participar_texto">
@@ -63,7 +66,8 @@
                             Letraset sheets containing Lorem Ipsum passages.
                         </p>
                     </div>
-                    <img src="assets_/nami.png" alt="Imagem da personagem Nami, do League of Legends">
+                    <img class="img_largura_maior" src="assets_/nami.png" alt="Imagem da personagem Nami, do jogo League of Legends">
+                    <img class="img_largura_menor" src="assets_/lulu.png" alt="Imagem da personagem Lulu, do jogo League of Legends">
                 </div>
             </div>
         </section>
@@ -277,5 +281,34 @@
             </div>
         </div>
     </footer>
+    <script>
+        if (screen.width <= 767) {
+            function botaoDoMenu() {
+                    var menu = document.getElementById("menu_header");
+                    if (menu.style.display === "flex") {
+                        //esconder o menu
+                        menu.style.display = "none"
+                    } else {
+                        //mostrar o menu
+                        menu.style.display = "flex"
+                    }
+                }
+                function botaoDoMenuFechar() {
+                    var menu = document.getElementById("menu_header");
+                    if (menu.style.display === "flex") {
+                        //esconder o menu
+                        menu.style.display = "none"
+                    }
+                }
+            } else 
+        window.onresize = () => {
+            if (screen.width > 767) {
+                var menu = document.getElementById("menu_header");
+                menu.style.display = "flex";
+            } else{
+                menu.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

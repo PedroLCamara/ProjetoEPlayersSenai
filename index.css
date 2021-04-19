@@ -31,6 +31,9 @@ header img{
     max-height: 40px;
     max-width: 252px;
 }
+.btn_menu{
+    display: none;
+}
 .nav_header{
     width: 800px;
     display: flex;
@@ -129,27 +132,19 @@ header img{
     height: 49px;
 }
 .como_participar{
-    position: relative;
     width: 100%;
     height: 400px;
-    background: linear-gradient(0deg, rgba(14, 36, 237, 0.45), rgba(14, 36, 237, 0.45)), url(assets_/bg-lol.jpg);
+    background: linear-gradient(178deg, rgba(0, 0, 0, 0) 9.9%, #000000 9.91%, #000000 51.56%, #000000 90.1%, rgba(0, 0, 0, 0) 90.11%), linear-gradient(0deg, rgba(14, 36, 237, 0.45), rgba(14, 36, 237, 0.45)), url(assets_/bg-lol.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
-.retangulo_como_participar{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    clip-path: polygon(0 10%, 100% 0, 100% 80%, 0 100%);
-}
 .container_como_participar{
-    position: absolute;
     z-index: 98;
     top: 0;
     display: flex;
     height: 100%;
-    width: auto;
+    width: 100%;
 }
 .como_participar_texto{
     height: 200px;
@@ -182,6 +177,9 @@ header img{
     width: auto;
     height: 100%;
 }
+.img_largura_menor{
+    display: none;
+}
 .partidas{
     width: 100%;
     height: 110px;
@@ -197,7 +195,7 @@ header img{
 .ao_vivo{
     display: flex;
     height: 80%;
-    width: 400px;
+    width: 35%;
     text-decoration: none;
     border-right: 2px solid white;
     align-items: center;
@@ -215,7 +213,7 @@ header img{
 .em_breve{
     display: flex;
     height: 80%;
-    width: 800px;
+    width: 65%;
     align-items: center;
     justify-content: space-between;
 }
@@ -231,7 +229,7 @@ header img{
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
-    width: 310px;
+    width: 100%;
     text-decoration: none;
     text-transform: uppercase;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -321,7 +319,7 @@ header img{
     margin-bottom: 34px;
 }
 .horarios_box{
-    background: linear-gradient(360deg, #000000 0%, #2C2C2C 23.96%, #2C2C2C 50%, #2C2C2C 80.21%, #000000 100%);
+    background:  linear-gradient(360deg, #000000 0%, #2C2C2C 23.96%, #2C2C2C 50%, #2C2C2C 80.21%, #000000 100%);
     height: 772px;
     width: 290px;
     display: flex;
@@ -441,6 +439,309 @@ footer{
     text-align: justify;
 }
 .redes_sociais_footer img{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+}
+@media (max-width: 1259px){
+    .container_grid{
+        width: 960px;
+    }
+    header img{
+        margin-right: 20px;
+    }
+    .btn_menu{
+        display: none;
+    }
+    .nav_header a{
+        font-size: 23px;
+    }
+    .banner{
+        height: 460px;
+    }
+    .container_banner img{
+        width: 730px;
+        margin-top: 7;
+        height: auto;
+    }
+    .banner_texto h1{
+        font-size: 70px;
+    }
+    .banner_texto span{
+        font-size: 25px;
+    }
+    .banner_texto a{
+        width: 235px;
+        font-size: 28px;
+        padding-top: 6px;
+        padding-left: 27px;
+        padding-right: 27px;
+        padding-bottom: 9px;
+        height: 60px;
+    }
+    .como_participar{
+        height: 344px;
+    }
+    .como_participar p{
+        font-size: 19px;
+    }
+    .como_participar h2{
+        font-size: 30px;
+    }
+    .como_participar img{
+        width: 470px;   
+        margin-left: -32px;   
+    }
+    .img_largura_menor{
+        display: none;
+    }
+    .partidas span{
+        font-size: 20px;
+    }
+    .partidas h2{
+        font-size: 20px;
+    }
+    .partidas a{
+        font-size: 20px;
+    }
+    .partidas img{
+        width: 30px;
+        height: 30px;
+    }
+    .noticias h2{
+        font-size: 28px;
+    }
+    .box_noticia{
+        width: 200px;
+        margin-right: 40px;
+    }
+    .box_noticia img{
+        height: 140px;
+    }
+    .horarios_box{
+        width: 227px;
+    }
+    .horarios h2{
+        font-size: 28px;
+        margin-bottom: 36px;
+    }
+    .container_footer{
+        justify-content: space-between;
+    }
+    .nav_footer span{
+        font-size: 22px;
+    }
+    .lista_footer a{
+        font-size: 13px;
+    }
+    footer img{
+        max-width: 300px;
+    }
+    .contato_footer{
+        font-size: 14.5px;
+    }
+    .campo_newsletter{
+        width: 221px;
+    }
+    .botao_newsletter{
+        width: 126px;
+    }
+    .redes_sociais_footer{
+        font-size: 22px;
+    }
+}
+@media (max-width: 991px){
+    .container_grid{
+        width: 720px;
+    } 
+    .btn_menu{
+        display: none;
+    }
+    .nav_header a{
+        font-size: 19px;
+    }
+    header img{
+        max-width: 180px;
+    }
+    .banner{
+        height: 322px;
+    }
+    .container_banner img{
+        width: 508px;
+    }
+    .banner_texto h1{
+        font-size: 60px
+    }
+    .banner_texto span{
+        font-size: 22px;
+    }
+    .banner_texto a{
+        width: 200px;
+        font-size: 22px;
+        padding-top: 12px;
+        padding-left: 27px;
+        padding-right: 27px;
+        padding-bottom: 0px;
+        height: 50px;
+    }
+    .logo_jogos{
+        height: 90px;
+    }
+    .logo_r6{
+        width: 125px;
+        height: 50px;
+    }
+    .logo_vava{
+        width: 125px;
+        height: 20px;
+    }
+    .logo_lol{
+        width: 125px;
+        height: 50px;
+    }
+    .logo_cs{
+        width: 125px;
+        height: 60px;
+    }
+    .logo_fifa{
+        width: 90px;
+        height: 40px;
+    }
+    .container_como_participar{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .como_participar img{
+        width: 198px;
+        height: 233px;
+        margin: 111px 0 0 0;
+    }
+    .img_largura_maior{
+        display: none;
+    }
+    .img_largura_menor{
+        display: unset;
+        width: 10px;
+        height: auto;
+    }
+    .partidas h2{
+        font-size: 15px
+    }
+    .partidas span{
+        font-size: 15px;
+    }
+    .noticias_horarios{
+        height: 1350px;
+    }
+    .container_noticias_horarios{
+        flex-direction: column;
+    }
+    .horarios{
+        height: auto;
+        width: 100%;
+    }
+    .horarios_box{
+        width: 100%;
+        height: 500px;
+        margin-bottom: 5px;
+        flex-direction: unset;
+        flex-wrap: wrap;
+    }
+    .info_partida{
+        width: 50%;
+    }
+    .jogo_partida{
+        margin-bottom: 0px;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+    }
+    .nav_footer span{
+        font-size: 20px;
+    }
+    .lista_footer a{
+        font-size: 10px;
+    }
+    footer img{
+        max-width: 150px;
+    }
+    .contato_footer span{
+        font-size: 10px;
+    }
+    .campo_newsletter{
+        width: 150px;
+    }
+    .botao_newsletter{
+        width: 80px;
+    }
+    .redes_sociais_footer span{
+        font-size: 20px;
+    }
+    .contato_footer{
+        width: 240px;
+    }
+    .redes_sociais_footer{
+        width: 240px;
+    }
+}
+@media (max-width: 767px){
+    .container_grid{
+        width: 88vw;
+    }
+    .btn_menu{
+        display: unset;
+        font-size: 40px;
+        color: white;
+    }
+    .nav_header{
+        display: none;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        height: 400px;
+        background-color: black;
+    }
+    .banner{
+        height:268px
+    }
+    .container_banner img{
+        width: 420px;
+    }
+    .banner_texto h1{
+        font-size: 50px;
+    }
+    .banner_texto span{
+        font-size: 16px;
+    }
+    .banner_texto a{
+        width: 200px;
+        font-size: 18px;
+        padding-top: 10px;
+        padding-left: 27px;
+        padding-right: 27px;
+        padding-bottom: 0px;
+        height: 44px;
+    }
+    .como_participar img{
+        display: none;
+    }
+    .container_como_participar{
+        justify-content: center
+    }
+    .noticias_horarios{
+        height: 1500px;
+    }
+    .box_noticia{
+        margin-right: 20px;
+    }
+}
+@media (max-width:659){
+    .box_noticia{
+        margin-right: 8px;
+    }
+    .linha_noticia{
+        flex-wrap: wrap;
+    }
 }
