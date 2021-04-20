@@ -12,7 +12,7 @@
 }
 header{
     align-items: center;
-    background-color: black;
+    background-color: #1E1C21;
     height: 60px;
     width: 100%;
     position: fixed;
@@ -177,9 +177,6 @@ header img{
     width: auto;
     height: 100%;
 }
-.img_largura_menor{
-    display: none;
-}
 .partidas{
     width: 100%;
     height: 110px;
@@ -269,14 +266,16 @@ header img{
     font-size: 30px;
 }
 .linha_noticias{
-    height: 50%;
+    height: 93%;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .box_noticia{
-    margin-right: 52px;
+    margin-right: 50px;
+    margin-bottom: 20px;
     height: 350px;
     width: 250px;
     display: flex;
@@ -491,9 +490,6 @@ footer{
         width: 470px;   
         margin-left: -32px;   
     }
-    .img_largura_menor{
-        display: none;
-    }
     .partidas span{
         font-size: 20px;
     }
@@ -607,7 +603,7 @@ footer{
         height: 40px;
     }
     .container_como_participar{
-        justify-content: space-between;
+        justify-content: center;
         width: 100%;
     }
     .como_participar img{
@@ -618,11 +614,6 @@ footer{
     .img_largura_maior{
         display: none;
     }
-    .img_largura_menor{
-        display: unset;
-        width: 10px;
-        height: auto;
-    }
     .partidas h2{
         font-size: 15px
     }
@@ -630,10 +621,14 @@ footer{
         font-size: 15px;
     }
     .noticias_horarios{
-        height: 1350px;
+        height: auto;
     }
     .container_noticias_horarios{
         flex-direction: column;
+        height: 70%;
+    }
+    .box_noticia{
+        margin-right: 0px;
     }
     .horarios{
         height: auto;
@@ -704,7 +699,7 @@ footer{
         background-color: black;
     }
     .banner{
-        height:268px
+        height: 267px;
     }
     .container_banner img{
         width: 420px;
@@ -731,17 +726,62 @@ footer{
         justify-content: center
     }
     .noticias_horarios{
-        height: 1500px;
+        height: auto;
+    }
+    .container_noticias_horarios{
+        height: 90%;
     }
     .box_noticia{
-        margin-right: 20px;
+        margin-right: 0px;
     }
 }
-@media (max-width:659){
-    .box_noticia{
-        margin-right: 8px;
+@media (max-width: 625px){
+    .logo_r6{
+        width: 20vw;
+        height: auto;
     }
-    .linha_noticia{
-        flex-wrap: wrap;
+    .logo_vava{
+        width: 15vw;
+        height: auto;
+    }
+    .logo_lol{
+        width: 15vw;
+        height: auto;
+    }
+    .logo_cs{
+        width: 20vw;
+        height: auto;
+    }
+    .logo_fifa{
+        width: 12vw;
+        height: auto;
+    }
+}
+@media (max-width: 585px){
+    .banner{
+        height: auto;
+    }
+    .container_banner img{
+        width: 60vw;
+    }
+    .banner_texto{
+        width: 40vw;
+    }
+    .banner_texto h1{
+        font-size: 8vw;
+    }
+    .banner_texto span{
+        font-size: 4vw;
+    }
+    .banner_texto a{
+        width: 40vw;
+        font-size: 4vw;
+        padding-top: 3vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-bottom: 3vw;
+        height: auto;
+    }
+    .como_participar{
     }
 }

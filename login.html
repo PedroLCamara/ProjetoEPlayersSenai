@@ -1,0 +1,99 @@
+<html lang="pt-br">
+
+<head>
+    <title>Login E-Players</title>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/77a9a4e10d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <iframe src="container_header.html"></iframe>
+    </header>
+    <main onclick="botaoDoMenuFechar()">
+        <section class="cadastro_jogador">
+            <div class="container_grid">
+                <div class="container_cadastro_jogador">
+                    <h1>Cadastro de jogador</h1>
+                    <div class="campo_cadastro">
+                        <span class="texto_cadastro">Nome</span>
+                        <input class="input_cadastro" type="text">
+                    </div>
+                    <div class="campo_cadastro">
+                        <span class="texto_cadastro">E-mail</span>
+                        <input class="input_cadastro" type="email">
+                    </div>
+                    <div class="campo_cadastro">
+                        <span class="texto_cadastro">Senha</span>
+                        <input class="input_cadastro" type="password">
+                    </div>
+                    <div class="campo_cadastro">
+                        <span class="texto_cadastro">Equipe</span>
+                        <input class="input_cadastro" type="text">
+                    </div>
+                    <input class="botao_cadastrar" type="submit" value="Cadastrar">
+                </div>
+            </div>
+        </section>
+        <section class="lista_jogadores">
+            <div class="container_grid">
+                <div class="container_lista_jogadores">
+                    <h2>Lista de jogadores</h2>
+                    <table class="tabela_jogadores">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Equipe</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>Ednaldo Pereira</td>
+                            <td>Bala tensa</td>
+                        </tr>
+                        <tr>
+                            <td>Inês Brasil</th>
+                            <td>Bala tensa</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <iframe src="container_footer.html"></iframe>
+    </footer>
+</body>
+<script>
+    if (screen.width <= 767) {
+        function botaoDoMenu() {
+            var menu = document.getElementById("menu_header");
+            if (menu.style.display === "flex") {
+                //esconder o menu
+                menu.style.display = "none"
+            } else {
+                //mostrar o menu
+                menu.style.display = "flex"
+            }
+        }
+        function botaoDoMenuFechar() {
+            var menu = document.getElementById("menu_header");
+            if (menu.style.display === "flex") {
+                //esconder o menu
+                menu.style.display = "none"
+            }
+        }
+    } else
+        window.onresize = () => {
+            if (screen.width > 767) {
+                var menu = document.getElementById("menu_header");
+                menu.style.display = "flex";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+</script>
+
+</html>
