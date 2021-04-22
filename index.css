@@ -844,3 +844,78 @@ footer{
         justify-content: center;
     }
 }
+@media (max-width: 440px){
+    .horarios_box{
+        height: 300px;
+    }
+    .info_partida{
+        font-size: 3vw;
+    }
+    .jogo_partida{
+        font-size: 4vw;
+    }
+    .jogo_partida img{
+        width: 7vw;
+        height: 7vw;
+    }
+}
+@media (max-width: 270px){
+    header img{
+        max-width: 60vw;
+    }
+    .btn_menu{
+        font-size: 20vw;
+    }
+    footer{
+        height: 560px;
+    }
+    footer img{
+        max-width: 60vw;
+    }
+    .contato_footer{
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .contato_footer span{
+        font-size: 4vw;
+        text-align: center;
+        width: 100vw;
+    }
+    .formulario_newsletter{
+        width: 100vw;
+        justify-content: center;
+    }
+    .campo_newsletter{
+        width: 55vw;
+        font-size: 10vw;
+    }
+    .botao_newsletter{
+        width: 30vw;
+        font-size: 10vw;
+    }
+    .redes_sociais_footer{
+        width: 100vw;
+        flex-direction: column;
+    }
+    .redes_sociais_footer span{
+        font-size: 20px;
+    }
+    .redes_sociais_footer img{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 201px){
+    .box_noticia{
+        width: 100%;
+    }
+    .box_noticia img{
+        height: auto;
+    }
+    .box_noticia h3{
+        font-size: 10vw;
+    }
+    .box_noticia p{
+        font-size: 10vw;
+    }
+}
