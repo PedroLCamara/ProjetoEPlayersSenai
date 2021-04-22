@@ -734,6 +734,12 @@ footer{
     .box_noticia{
         margin-right: 0px;
     }
+    footer{
+        height: 500px;
+    }
+    .container_footer{
+        flex-direction: column;
+    }
 }
 @media (max-width: 625px){
     .logo_r6{
