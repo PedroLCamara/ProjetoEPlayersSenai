@@ -25,7 +25,7 @@ iframe{
     border: 0px;
 }
 .main_bg{
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(assets_/raze2.png), url(assets_/ziggs2.png), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(90deg, #FF0000 0%, #010101 17.19%, #010101 50.52%, #010101 82.29%, #FF0000 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(assets_/time.png), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(90deg, #0000FF 0%, #010101 31.77%, #010101 50.52%, #010101 78.65%, #0000FF 100%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -57,7 +57,7 @@ iframe{
     margin-bottom: 20px;
 }
 .cadastro_jogador input{
-    background-color: #590101;
+    background-color: #010149;
     border: 0;
     border-radius: 20px;
     width: 248px;
@@ -89,6 +89,12 @@ iframe{
     color: black;
     text-transform: unset;
     font-size: unset;
+}
+.input_cadastro_file{
+    border-radius: unset;
+    background-color: gray;
+    width: 350px;
+    height: 30px;
 }
 .container_lista_jogadores{
     display: flex;
@@ -135,8 +141,12 @@ td{
     padding: 5px 10px;
     background-color: black;
 }
+td img{
+    width: 30px;
+    height: 30px;
+}
 table.tabela_jogadores thead{
-    background-color: #590101;
+    background-color: #010149;
     border-bottom: 2px solid white;
 }
 footer{
