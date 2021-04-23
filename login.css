@@ -151,10 +151,47 @@ footer{
     footer{
         height: 500px;
     }
+    .tabela_jogadores{
+        width: 100%;
+    }
 }
-
+@media (max-width: 440px){
+    .campo_cadastro{
+        width: 100%;
+    }
+    .input_cadastro{
+        width: 100%;
+    }
+}
 @media (max-width: 270px){
     footer{
         height: 560px;
+    }
+}
+@media (max-width: 250px){
+    .botao_cadastrar{
+        width: 100%;
+        font-size: 12vw;
+    }
+    th{
+        font-size: 8vw;
+    }
+    td{
+        font-size: 8vw;
+    }
+    td img{
+        width: 15vw;
+        height: 15vw;
+    }
+}
+@media (max-width: 190px){
+    .cadastro_jogador h1{
+        font-size: 20vw;
+    }
+    .campo_cadastro span{
+        font-size: 14vw;
+    }
+    .lista_jogadores h2{
+        font-size: 20vw;
     }
 }

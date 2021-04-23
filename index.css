@@ -858,6 +858,12 @@ footer{
         width: 7vw;
         height: 7vw;
     }
+    footer img{
+    max-width: 70%;
+}
+    footer a{
+        max-width: 60vw;
+    }
 }
 @media (max-width: 270px){
     header img{
@@ -870,7 +876,7 @@ footer{
         height: 560px;
     }
     footer img{
-        max-width: 60vw;
+        max-width: 70%;
     }
     .contato_footer{
         justify-content: center;
