@@ -226,3 +226,8 @@ footer{
         height: 90vh;
     }
 }
+@media(max-width: 120px){
+    footer{
+        height: 780px;
+    }
+}

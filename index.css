@@ -25,7 +25,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-header img{
+.logo{
     width: auto;
     height: auto;
     max-height: 40px;
@@ -445,7 +445,7 @@ footer{
     .container_grid{
         width: 960px;
     }
-    header img{
+    .logo{
         margin-right: 20px;
     }
     .btn_menu{
@@ -529,7 +529,7 @@ footer{
     .lista_footer a{
         font-size: 13px;
     }
-    footer img{
+    .imagem_footer{
         max-width: 300px;
     }
     .contato_footer{
@@ -555,7 +555,7 @@ footer{
     .nav_header a{
         font-size: 19px;
     }
-    header img{
+    .logo{
         max-width: 180px;
     }
     .banner{
@@ -655,7 +655,7 @@ footer{
     .lista_footer a{
         font-size: 10px;
     }
-    footer img{
+    .imagem_footer{
         max-width: 150px;
     }
     .contato_footer span{
@@ -671,7 +671,7 @@ footer{
         font-size: 20px;
     }
     .contato_footer{
-        width: 240px;
+        width: 100%;
     }
     .redes_sociais_footer{
         width: 240px;
@@ -858,9 +858,9 @@ footer{
         width: 7vw;
         height: 7vw;
     }
-    footer img{
-    max-width: 70%;
-}
+    .imagem_footer{
+    max-width: 100%;
+    }
     .logo_footer{
         display: flex;
         width: 60vw;
@@ -870,7 +870,7 @@ footer{
     }
 }
 @media (max-width: 270px){
-    header img{
+    .logo{
         max-width: 60vw;
     }
     .btn_menu{
@@ -879,8 +879,8 @@ footer{
     footer{
         height: 560px;
     }
-    footer img{
-        max-width: 70%;
+    .imagem_footer{
+        max-width: 100%;
     }
     .contato_footer{
         justify-content: center;
@@ -933,7 +933,6 @@ footer{
     .nav_header a{
         font-size: 10vw;
     }
-
 }
 @media (max-width: 132px){
     .horarios h2{
@@ -941,6 +940,27 @@ footer{
     }
     .noticias h2{
         font-size: 20vw;
+    }
+}
+@media(max-width: 120px){
+    footer{
+        height: 780px;
+    }
+}
+@media (max-width: 115px){
+    .logo{
+        max-width: 50vw;
+    }
+}
+@media (max-width: 75px){
+    .btn_menu{
+        font-size: 10vw;
+    }
+    .nav_footer span{
+        font-size: 25vw;
+    }
+    .lista_footer a{
+        font-size: 10vw;
     }
 }
 @media (min-height: 2330px){
