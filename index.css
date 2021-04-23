@@ -671,7 +671,7 @@ footer{
         font-size: 20px;
     }
     .contato_footer{
-        width: 100%;
+        width: auto;
     }
     .redes_sociais_footer{
         width: 240px;

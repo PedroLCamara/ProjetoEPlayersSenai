@@ -11,7 +11,23 @@
 
 <body>
     <header>
-        <iframe src="container_header.html" scroll="none"></iframe>
+        <div class="container_grid">
+            <div class="container_header">
+                <a href="index.html" target="_parent">
+                    <img class="logo" src="assets_/logo.svg" alt="Logo do E-Players, portal de campeonatos online">
+                </a>
+                <a class="btn_menu" href="javascript:void(0)" onclick="botaoDoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <nav id="menu_header" class="nav_header">
+                    <a href="index.html" target="_parent">Início</a>
+                    <a href="index.html #horarios_noticias" target="_parent">Horários</a>
+                    <a href="#">Campeonatos</a>
+                    <a href="#">Resultados</a>
+                    <a href="index.html #horarios_noticias" target="_parent">Notícias</a>
+                </nav>
+            </div>
+        </div>
     </header>
     <main onclick="botaoDoMenuFechar()">
         <div class="main_bg">
@@ -69,33 +85,32 @@
     </footer>
 </body>
 <script>
-    if (screen.width <= 767) {
+    if (screen.width <= 890) {
         function botaoDoMenu() {
-            var menu = document.getElementById("menu_header");
-            if (menu.style.display === "flex") {
-                //esconder o menu
-                menu.style.display = "none"
-            } else {
-                //mostrar o menu
-                menu.style.display = "flex"
-            }
-        }
-        function botaoDoMenuFechar() {
-            var menu = document.getElementById("menu_header");
-            if (menu.style.display === "flex") {
-                //esconder o menu
-                menu.style.display = "none"
-            }
-        }
-    } else
-        window.onresize = () => {
-            if (screen.width > 767) {
                 var menu = document.getElementById("menu_header");
-                menu.style.display = "flex";
-            } else {
-                menu.style.display = "none";
+                if (menu.style.display === "flex") {
+                    //esconder o menu
+                    menu.style.display = "none"
+                } else {
+                    //mostrar o menu
+                    menu.style.display = "flex"
+                }
             }
+            function botaoDoMenuFechar() {
+                var menu = document.getElementById("menu_header");
+                if (menu.style.display === "flex") {
+                    //esconder o menu
+                    menu.style.display = "none"
+                }
+            }
+        } else 
+    window.onresize = () => {
+        if (screen.width > 890) {
+            var menu = document.getElementById("menu_header");
+            menu.style.display = "flex";
+        } else{
+            menu.style.display = "none";
         }
+    }
 </script>
-
 </html>
