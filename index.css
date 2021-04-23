@@ -943,3 +943,8 @@ footer{
         font-size: 20vw;
     }
 }
+@media (min-height: 2330px){
+    body{
+        background-color: black;
+    }
+}
