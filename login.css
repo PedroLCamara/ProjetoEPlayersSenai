@@ -195,3 +195,27 @@ footer{
         font-size: 20vw;
     }
 }
+@media (max-width: 103px){
+    th{
+        font-size: 6vw;
+    }
+    td{
+        font-size: 6vw;
+    }
+}
+@media (max-width: 84px){
+    th{
+        font-size: 4vw;
+    }
+    td{
+        font-size: 4vw;
+    }
+}
+@media (max-width: 71px){
+    th{
+        font-size: 2vw;
+    }
+    td{
+        font-size: 2vw;
+    }
+}

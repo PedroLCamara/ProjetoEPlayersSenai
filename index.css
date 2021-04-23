@@ -861,8 +861,12 @@ footer{
     footer img{
     max-width: 70%;
 }
-    footer a{
-        max-width: 60vw;
+    .logo_footer{
+        display: flex;
+        width: 60vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
 @media (max-width: 270px){
@@ -923,5 +927,19 @@ footer{
     }
     .box_noticia p{
         font-size: 10vw;
+    }
+}
+@media (max-width:150px){
+    .nav_header a{
+        font-size: 10vw;
+    }
+
+}
+@media (max-width: 132px){
+    .horarios h2{
+        font-size: 20vw;
+    }
+    .noticias h2{
+        font-size: 20vw;
     }
 }
