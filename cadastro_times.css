@@ -228,3 +228,8 @@ footer{
         font-size: 2vw;
     }
 }
+@media (min-height: 970px){
+    .main_bg{
+        height: 90vh;
+    }
+}
